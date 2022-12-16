@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McFit's</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body> 
+    <header>
+        <nav >
+            <a href="index.html" class="logo"><span>Mc</span>Fit's</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+               </div>
+
+            <ul class="nav-list">
+                    
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                     <a href="produtos.html">Planos</a>
+                </li>
+
+                <li>
+                      <a href="nossa-equipe.html">Equipe</a>
+                </li>
+
+                <li>
+                      <a href="contato.html">contato</a>
+                </li>
+            </ul>
+
+            <a href="contato.html"><button class="btn matricula">Matricule-se</button></a>  
+        </nav>
+
+
+    </header>   
+    
+    
+    
+    <!---------COMEÇO DO FORMULÁRIO--------->
+
+        <section class="formulario-bg">
+        <div class="box_form">
+    <form id="register-form">
+        <fieldset>
+            <legend class="title"><b>Faça contato conosco</b></legend>
+            <br>
+
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required data-min-length="3" data-required data-only-letters>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div><br><br>
+
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" data-required required data-email-validate data-min-length="3">
+                <label for="email" class="labelInput">E-mail</label>
+            </div><br><br>
+
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required data-required>
+                <label for="telefone" class="labelInput">Telefone</label>
+            </div><br><br>
+
+            <p>Sexo</p>
+            <input type="radio" name="genero" id="feminino" value="feminino" required>
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" name="genero" id="outro" value="outro" required>
+            <label for="outro">Outro</label><br><br>
+
+            <label for="data_nascimento"><b>Data de nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+            <br><br>
+            
+            <div class="inputBox">
+                <input type="text" name="cep" id="cep" class="inputUser" required data-required>
+                <label for="cep" class="labelInput">CEP</label>
+            </div><br><br>
+
+            
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito <a href="#">os termos de uso!</a></label>
+            </div><br>
+
+            <input type="submit" id="submit" value="Enviar">
+            <div id=""></div>
+        </fieldset>
+    </form>
+</div>
+<p class="error-validation template"></p>
+</section>
+
+<div class="container-cep">
+    <h2>Consulta CEP</h2>
+    <form>
+        
+        <div class="frm-row">
+            <label for="rua">rua</label>
+            <input type="text" name="rua" id="rua">
+        </div>
+        <div class="frm-row">
+            <label for="bairro">bairro</label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <div class="frm-row">
+            <label for="cidade">cidade</label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <div class="frm-row">
+            <label for="estado">estado</label>
+            <input type="text" name="estado" id="estado">
+        </div>
+    </form>
+
+    <a href="descobrir-cep.html">Não sabe seu CEP?</a>
+</div>
+
+<script src="js/consulta-endereco.js"></script>
+
+<!--------------------FIM DO FORMULÁRIO------------->
+
+
+<div class="redes">
+   
+
+    <div class="sociais">
+        <div class="social">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+
+                    
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="script/mobile-navbar.js"></script>
+<script src="script/consulta-endereco.js"></script>
+
+
+</body>
+</html>
